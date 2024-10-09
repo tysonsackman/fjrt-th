@@ -1,0 +1,10 @@
+1. Initialize array `numArray[20]`
+2. Initialize `count = 0`
+3. While `count < 20`:
+    a. Prompt user: "Enter number (or -1 to stop):"
+    b. If input equals -1, break
+    c. Store input in `numArray[count]`
+    d. Increment `count`
+4. For `i = count - 1` to `0`:
+    a. Display `numArray[i]`
+5. End program
