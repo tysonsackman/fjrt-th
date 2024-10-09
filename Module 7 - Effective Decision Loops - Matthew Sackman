@@ -1,0 +1,8 @@
+1. Initialize variable `total_sum = 0`
+2. Initialize variable `user_input = -1` (to ensure the loop starts)
+3. While `user_input` is not equal to 0:
+    a. Prompt user to input a number: `Enter a number (0 to quit): `
+    b. If `user_input` is not 0:
+        i. Add `user_input` to `total_sum`
+4. Display `Total sum of entered numbers: total_sum`
+5. End program
