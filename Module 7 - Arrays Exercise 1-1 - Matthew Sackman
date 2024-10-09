@@ -1,0 +1,7 @@
+1. Initialize an array `numArray[20]`
+2. For `i = 0` to `19`:
+    a. Prompt user: "Enter number:"
+    b. Store input in `numArray[i]`
+3. For `i = 19` to `0`:
+    a. Display `numArray[i]`
+4. End program
