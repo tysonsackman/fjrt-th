@@ -1,0 +1,18 @@
+1. Prompt user for input: `Enter years left until retirement: `
+2. Prompt user for input: `Enter the annual amount you can save: `
+3. Initialize variables:
+    - `annual_savings = user input`
+    - `retirement_years = user input`
+    - `total_savings = 0`
+    - `interest_rate = 0.03`
+    - `annual_expense = 60000`
+    - `year = 1`
+
+4. While `year <= 30` AND `total_savings > 0`:
+    a. Accumulate `total_savings` with interest: `total_savings = total_savings + (annual_savings * interest_rate)`
+    b. Deduct `annual_expense` from `total_savings`
+    c. Display `Savings at start of year: total_savings`
+    d. If `total_savings <= 0`, print `Savings depleted`
+    e. Increment `year`
+
+5. End program
