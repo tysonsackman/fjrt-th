@@ -1,0 +1,12 @@
+1. Initialize two parallel arrays:
+    - `addIns[5] = ["Whipped cream", "Cinnamon", "Chocolate sauce", "Amaretto", "Irish whiskey"]`
+    - `prices[5] = [0.89, 0.25, 0.59, 1.50, 1.75]`
+2. Initialize `total_price = 2.00`
+3. While true:
+    a. Prompt user: "Enter add-in (or 'stop' to finish):"
+    b. If input is "stop", break
+    c. For `i = 0` to `4`:
+        i. If `addIns[i]` equals input, add `prices[i]` to `total_price`, display price, and break
+    d. If no match found, display "Sorry, we do not carry that"
+4. Display `total_price`
+5. End program
