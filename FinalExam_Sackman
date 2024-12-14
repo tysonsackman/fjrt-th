@@ -1,0 +1,54 @@
+start
+    Declarations
+        num SIZE = 10
+        num MAX = 6
+        string name
+        num scores[SIZE]
+        num x
+        num y
+        num temp
+        num total
+        num COMPS = SIZE - 1
+    // Call the modules
+    fillArray()
+    sortArray()
+    displayTotal()
+stop
+
+fillArray()
+// Accept the student's name and scores
+    output "Enter the student's name: "
+    input name
+    for x = 0 to SIZE - 1
+        output "Enter score ", x + 1, ": "
+        input scores[x]
+    endfor
+return
+
+sortArray()
+// Perform a bubble sort to arrange scores in descending order
+    for x = 0 to COMPS - 1
+        for y = 0 to COMPS - x - 1
+            if scores[y] < scores[y + 1] then
+                swap(scores[y], scores[y + 1])
+            endif
+        endfor
+    endfor
+return
+
+swap(num &a, num &b)
+// Swap the values of two variables
+    temp = a
+    a = b
+    b = temp
+return
+
+displayTotal()
+// Calculate and display the total of the six highest scores
+    total = 0
+    for x = 0 to MAX - 1
+        total = total + scores[x]
+    endfor
+    output "Student Name: ", name
+    output "Total points for the six highest quizzes: ", total
+return
